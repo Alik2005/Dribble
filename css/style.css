@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+body .btn {
+  background: #ea4c89;
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  min-width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
+body header {
+  background-color: #f9f8fd;
+}
+body header nav {
+  background-color: white;
+  height: 80px;
+  display: flex;
+  padding: 15px;
+}
+body header nav .logo svg {
+  width: 100px;
+}
+body header nav .nav {
+  margin-top: 8px;
+}
+body header nav .nav ul {
+  display: flex;
+  list-style: none;
+  font-weight: 600;
+}
+body header nav .nav ul li {
+  padding-right: 15px;
+  cursor: pointer;
+  font-size: 15px;
+}
+body header nav .nav ul li a {
+  text-decoration: none;
+  color: #6e6d7a;
+  transition: 200ms;
+}
+body header nav .nav ul li a:hover {
+  color: black;
+}
+body header nav .registration {
+  display: flex;
+  margin-left: 400px;
+  margin-top: 20px;
+  color: #9e9ea7;
+  cursor: pointer;
+}
+body header nav .registration .fas {
+  font-size: 25px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+body header nav .registration p {
+  margin: 0;
+  margin-top: 10px;
+}
+body header nav .registration button {
+  background: #ea4c89;
+  color: white;
+  border: none;
+  width: 150px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 26px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+body header .desc {
+  min-height: 500px;
+  padding: 0px 50px;
+  display: flex;
+  align-items: center;
+}
+body header .desc .titleDesc {
+  width: 700px;
+}
+body header .desc .titleDesc h1 {
+  margin: 0;
+  font-size: 48px;
+}
+body header .desc .imgDesc {
+  margin-left: 160px;
+}
+body main {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+body main .all {
+  display: flex;
+  justify-content: center;
+}
+body main .all p {
+  padding-right: 10px;
+  color: #9e9ea7;
+  cursor: pointer;
+  transition: 200ms;
+}
+body main .all p:hover {
+  color: black;
+}
+body main .pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-row-gap: 50px;
+  padding: 20px;
+}
+body main .pictures div {
+  width: 350px;
+}
+body main .pictures div img {
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+}
+body main .pictures div .uSer {
+  display: flex;
+}
+body main .pictures div .uSer h1 {
+  margin: 0;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 7px;
+  font-weight: 500;
+  cursor: pointer;
+}
+body main .pictures div .uSer h1 span {
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  padding: 0px 2px;
+  margin-left: 5px;
+  color: white;
+}
+body main .pictures div .uSer .user {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+body main .pictures div .uSer .view {
+  color: #6e6d7a;
+  font-size: 15px;
+  margin-top: 8px;
+  margin-left: 90px;
+}
+body footer {
+  background-color: #f9f8fd;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px;
+  justify-content: center;
+}
+body footer .footersDiv {
+  width: 230px;
+  font-size: 14px;
+}
+body footer .footersDiv:nth-child(1) {
+  width: 250px;
+}
+body footer .footersDiv h1 {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 6a00;
+}
+body footer .footersDiv p {
+  cursor: pointer;
+}
+body footer .footersDiv div .fab {
+  font-size: 20px;
+  padding-right: 10px;
+  color: #3d3d4e;
+}
+
+@media (max-width: 1250px) {
+  body header nav .registration {
+    margin-left: 120px;
+  }
+  body header nav .nav ul li {
+    padding-right: 8px;
+  }
+  body main .pictures {
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
+}
+@media (max-width: 1200px) {
+  body header nav .registration {
+    margin-left: 5px;
+  }
+  body header nav .nav {
+    width: 850px;
+  }
+  body header nav .nav ul li {
+    padding-right: 15px;
+  }
+}
+@media (max-width: 1100px) {
+  body header .desc .titleDesc {
+    width: 600px;
+  }
+  body header .desc .titleDesc h1 {
+    font-size: 30px;
+  }
+  body main .pictures {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 1050px) {
+  body header nav {
+    height: 50px;
+  }
+  body header nav .logo {
+    margin-left: 450px;
+  }
+  body header nav .nav {
+    display: none;
+  }
+  body header nav .registration {
+    display: none;
+  }
+}
+@media (max-width: 999px) {
+  body header .desc {
+    display: block;
+    padding: 30px 40px;
+  }
+}
+@media (max-width: 900px) {
+  body header nav .logo {
+    margin-left: 400px;
+  }
+}
+@media (max-width: 850px) {
+  body header nav .logo {
+    margin-left: 370px;
+  }
+}
+@media (max-width: 780px) {
+  body header nav .logo {
+    margin-left: 350px;
+  }
+}
+@media (max-width: 780px) {
+  body header nav .logo {
+    margin-left: 350px;
+  }
+  body main .all {
+    display: none;
+  }
+}
+@media (max-width: 745px) {
+  body header nav .logo {
+    margin-left: 300px;
+  }
+  body header .desc .imgDesc {
+    margin: 0;
+    margin-top: 30px;
+  }
+  body header .desc .imgDesc img {
+    width: 400px;
+  }
+  body main .pictures {
+    grid-template-columns: 1fr;
+  }
+  body main .pictures div {
+    width: 550px;
+  }
+  body main .pictures div img {
+    width: 500px;
+    height: 350px;
+  }
+  body footer .footersDiv:nth-child(2) {
+    display: none;
+  }
+  body footer .footersDiv:nth-child(3) {
+    display: none;
+  }
+  body footer .footersDiv:nth-child(4) {
+    display: none;
+  }
+  body footer .footersDiv:nth-child(5) {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  body header nav .logo {
+    margin-left: 280px;
+  }
+  body header .desc .titleDesc p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 620px) {
+  body header .desc .titleDesc {
+    width: 400px;
+  }
+}
+@media (max-width: 600px) {
+  body header nav .logo {
+    margin-left: 240px;
+  }
+  body main .pictures div {
+    width: 350px;
+  }
+  body main .pictures div img {
+    width: 430px;
+    height: 300px;
+  }
+}
+@media (max-width: 480px) {
+  body header nav .logo {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 470px) {
+  body header .desc .titleDesc {
+    width: 200px;
+  }
+  body header .desc .imgDesc img {
+    width: 230px;
+  }
+  body main .pictures div {
+    width: 280px;
+  }
+  body main .pictures div img {
+    width: 280px;
+    height: 200px;
+  }
+  body footer .footersDiv:nth-child(6) {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
